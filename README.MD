@@ -19,6 +19,14 @@ source ven_name/bin/activate
 pip install -r requirements.txt
 
 
+python -m train_and_save
+
+python -m app
+
+# open a new terminal
+
+streamlit run app.py
+
 
 # converting working directory to local directory we run
 git init
@@ -31,7 +39,7 @@ git commit -m "message"
 # create a folder on github and at the you will find 3 commands
 git remote
 git branch
-git push
+git push -u origin main
 
 # when pushing it for the second time, 
-git push
+git push -u origin main
