@@ -1,3 +1,10 @@
+"""
+
+frontend/app.py contains stremlit code for the UI interface
+
+"""
+
+
 import streamlit as st
 import pandas as pd
 import requests
@@ -21,7 +28,6 @@ if st.button("Predict"):
                   "day": day,
                   "time": time,
                   "size": size}
-    # st.write("dictionary created")
     
     response = requests.post("http://127.0.0.1:5000/predict", json=input_data)
 
