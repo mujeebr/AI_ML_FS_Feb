@@ -30,6 +30,3 @@ if st.button("Predict"):
         st.write("The tip value is", prediction)
     else:
         st.write("Error in prediction")
-
-
-# http://127.0.0.1:5000/predict
